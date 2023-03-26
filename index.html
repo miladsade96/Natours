@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
+  
   <link rel="stylesheet" href="css/icon-font.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-
+  
   <title>Natours | Exciting tours for adventurous people</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
       <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
     </ul>
   </nav>
-  </box></div>
+</div>
 
 <header class="header">
   <div class="header__logo-box">
@@ -117,7 +117,7 @@
       </div>
     </div>
   </section>
-
+  
   <section class="section-tours" id="section-tours">
     <div class="u-center-text u-margin-bottom-big">
       <h2 class="heading-secondary">
@@ -220,7 +220,7 @@
       <a href="#" class="btn btn--green">Discover all tours</a>
     </div>
   </section>
-
+  
   <section class="section-stories">
     <div class="bg-video">
       <video class="bg-video__content" autoplay loop muted>
@@ -318,8 +318,14 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="footer__logo-box u-margin-bottom-big">
-    <img src="img/logo-green-2x.png" alt="Logo" class="footer__logo">
+  <div class="footer__logo-box">
+    <!--Art direction - Responsive images-->
+    <picture class="footer__logo">
+      <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+      <!--1x and 2x are density descriptors—The browser will use them
+     to choose best image based on user screen resolution.-->
+      <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Logo">
+    </picture>
   </div>
   <div class="row">
     <div class="col-1-of-2">
